@@ -31,6 +31,7 @@ Java provides **access modifiers** to enforce encapsulation:
 - **`private`**: Accessible only within the same class.
 - **`protected`**: Accessible within the same package and subclasses.
 - **`public`**: Accessible from anywhere.
+- **`default`** (no modifier): Accessible only within the same package (package-private).
 
 ### **Example: Encapsulation with Private Variables**
 

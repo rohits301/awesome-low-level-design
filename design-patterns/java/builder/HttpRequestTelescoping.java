@@ -11,7 +11,12 @@ public class HttpRequestTelescoping {
     private int timeout;        // Optional, default 30s
 
     public HttpRequestTelescoping(String url) {
-        this(url, "GET");
+        this(url, "GET"); // what does this do? 
+        // This constructor initializes the request with a URL and defaults the method to GET.
+        // It allows for a simple request without any additional parameters.
+        // why is it required? Can't we have just two parameters directly?
+        // This constructor is useful for cases where only the URL is known, and the method can default to GET.
+        // It simplifies the creation of a basic HTTP request without needing to specify all parameters.
     }
     public HttpRequestTelescoping(String url, String method) {
         this(url, method, null);

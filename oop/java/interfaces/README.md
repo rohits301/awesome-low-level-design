@@ -55,6 +55,10 @@ Now, let's create objects and call the methods.
 public class Main {
     public static void main(String[] args) {
         Vehicle myCar = new Car(); // Polymorphism: Interface reference
+        // This is runtime polymorphism, dynamic method dispatch
+        // The actual object is of type Car, but referenced by Vehicle
+        // So, at runtime, the Car's methods will be called
+        // Benefit: We can use different Vehicle implementations interchangeably
         myCar.start();
         myCar.stop();
     }
@@ -144,7 +148,7 @@ class Dog implements Animal {
 ```java
 public class Main {
     public static void main(String[] args) {
-        Dog myDog = new Dog();
+        Dog myDog = new Dog(); // can use Animal reference as well
         myDog.sound();
         myDog.sleep(); // Calling default method
     }

@@ -173,7 +173,8 @@ class Dog extends Animal {
 public class Main {
     public static void main(String[] args) {
         Animal myAnimal = new Dog(); // Polymorphism
-        myAnimal.makeSound();
+        myAnimal.makeSound(); // will invoke Dog's makeSound method
+        // because of method overriding
     }
 }
 ```
@@ -207,6 +208,10 @@ class Animal {
 class Dog extends Animal {
     Dog() {
         super(); // Calls the parent class constructor
+        // Why do we need to call parent constructor?
+        // Because it initializes the parent class part of the object
+        // before the child class constructor
+        // is executed.
         System.out.println("Dog Constructor");
     }
     void makeSound() {

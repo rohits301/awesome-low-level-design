@@ -98,6 +98,7 @@ Dr. Johnson is teaching Mathematics
 | Lifetime     | Contained object **outlives** the container | Contained object **is destroyed** with the container |
 | Example      | University and Professors | Car and Engine |
 
+So, composition is more like when one object is a part of another and cannot exist without it, while aggregation is when one object contains another but both can exist independently.
 ---
 
 ## Why Use Aggregation?
