@@ -6,7 +6,7 @@ import hotelmanagementsystem.payment.CreditCardPayment;
 import hotelmanagementsystem.payment.Payment;
 
 public class HotelManagementSystemDemo {
-    public static void run() {
+    public static void main(String[] args) {
         HotelManagementSystem hotelManagementSystem = HotelManagementSystem.getInstance();
 
         // Create guests
